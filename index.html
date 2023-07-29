@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-website-wrapper">
+      <div class="form-block">
+        <input
+          type="text"
+          class="input-element"
+          id="nameSurname"
+          placeholder="Write Full Name"
+        />
+        <input
+          type="text"
+          class="input-element"
+          id="taskName"
+          placeholder="Write Task Name"
+        />
+        <input
+          type="date"
+          class="input-element"
+          id="taskDate"
+          placeholder="Write Task Date"
+        />
+        <button class="button-element" onclick="{createTask()}">
+          Create Task
+        </button>
+      </div>
+
+      <div class="tasks-wrapper"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

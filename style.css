@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-website-wrapper {
+  width: 100%;
+  min-height: 800px;
+  background-image: linear-gradient(
+    to right,
+    #1e439a,
+    #172a54,
+    #081431,
+    #000000
+  );
+  padding-inline: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.form-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  padding-inline: 30px;
+  border-radius: 8px;
+}
+
+.input-element {
+  width: 25%;
+  height: 30px;
+  padding-left: 4px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.button-element {
+  width: 20%;
+  height: 30px;
+  background: transparent;
+  outline: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button-element:hover {
+    background: white;
+    color: black;
+}
+
+.tasks-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 20px;
+    padding-inline: 40px;
+    color: white;
+    background-color: transparent;
+    border-top: 4px solid white;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    border-radius: 4px;
+}
+
+.taskItem {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    background: white;
+    border-radius: 4px;
+}
+
+.taskItemText {
+    font-size: 24px;
+    color: black;
+}
+
+.date {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    .form-block {
+        flex-wrap: wrap;
+    }
+
+    .input-element {
+        width: 30%;
+        font-size: 12px;
+    }
+
+    .button-element {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .form-block {
+        height: 120px;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-inline: 10px;
+    }
+
+    .input-element {
+        width: 100%;
+    }
+}
