@@ -84,12 +84,12 @@
 }
 
 .taskItemText {
+    text-align: center;
     width: 90%;
     text-overflow: ellipsis;
     -webkit-line-clamp: 1;
     word-break: break-all;
     overflow: hidden;
-    background-color: blue;
     font-size: 24px;
     color: black;
 }
@@ -111,6 +111,11 @@
 }
 
 @media only screen and (max-width: 515px) {
+    .tasks-wrapper {
+        justify-content: center;
+        padding-inline: 10px;
+    }
+
     .form-block {
         gap: 10px;
         flex-direction: column;
@@ -121,5 +126,11 @@
 
     .input-element {
         width: 100%;
+    }
+
+    .taskItem {
+        width: 100%;
+        min-height: 300px;
+        height: auto;
     }
 }
