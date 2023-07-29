@@ -84,17 +84,20 @@
 }
 
 .taskItemText {
+    width: 90%;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    word-break: break-all;
+    overflow: hidden;
+    background-color: blue;
     font-size: 24px;
     color: black;
-}
-
-.date {
-    font-size: 20px;
 }
 
 @media only screen and (max-width: 992px) {
     .form-block {
         flex-wrap: wrap;
+        height: auto;
     }
 
     .input-element {
@@ -109,7 +112,7 @@
 
 @media only screen and (max-width: 515px) {
     .form-block {
-        height: 120px;
+        gap: 10px;
         flex-direction: column;
         padding-top: 10px;
         padding-bottom: 10px;
